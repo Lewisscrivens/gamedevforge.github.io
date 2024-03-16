@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgamedevforge=self.webpackChunkgamedevforge||[]).push([[6593],{763:e=>{e.exports=JSON.parse('{"label":"hello","permalink":"/gamedevforge.github.io/blog/tags/hello","allTagsPath":"/gamedevforge.github.io/blog/tags","count":2,"unlisted":false}')}}]);
