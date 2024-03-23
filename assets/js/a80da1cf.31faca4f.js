@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgamedevforge=self.webpackChunkgamedevforge||[]).push([[497],{1550:e=>{e.exports=JSON.parse('{"label":"docusaurus","permalink":"/blog/tags/docusaurus","allTagsPath":"/blog/tags","count":4,"unlisted":false}')}}]);
