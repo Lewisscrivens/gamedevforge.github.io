@@ -1,0 +1,29 @@
+.heroBanner {
+    padding: 7% 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #1b1b1d;
+    background-image: url("/static/img/GameDevForgeWelcomeImg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+@media screen and (max-width: 996px) {
+    .heroBanner {
+        
+    }
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homepageSection {
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+}
