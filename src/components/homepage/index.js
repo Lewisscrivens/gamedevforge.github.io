@@ -14,7 +14,7 @@ const HomepageTextSections = [
             <>
             Welcome to the GameDevForge!
             <br></br> I'm Lewis a Senior Gameplay Developer currently working at BULKHEAD. 
-            I have put together this learning resource to for anyone looking to become a game developer.
+            I have put together this learning resource for anyone looking to become a game developer.
             We start with the very basics of understanding core principles of programming and work up to more advanced features.
             See the modules page for more information.
             Good luck!
