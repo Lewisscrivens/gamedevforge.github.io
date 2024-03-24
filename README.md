@@ -1,4 +1,4 @@
-# Website
+# GameDevForge
 
 This is the GitHub Pages repo where I host [GameDevForge](https://gamedevforge.net/), a resource for game developers or anyone looking to learn game development.
 
