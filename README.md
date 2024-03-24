@@ -1,41 +1,18 @@
 # Website
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This is the GitHub Pages repo where I host [GameDevForge](https://gamedevforge.net/), a resource for game developers or anyone looking to learn game development.
 
-### Installation
+### What is it?
 
-```
-$ yarn
-```
+- A learning resource to learn the very basics of programming and game development up to more advanced principles.
+- A blog where I will be posting any interesting/useful features and processes involved with game development.
 
-### Local Development
+### Learning to code?
 
-```
-$ yarn start
-```
+Learning to code is broken down into modules starting with the basic principles up to more advanced topics.\
+As the modules progress there will be more specific modules based on game development concepts or specific engines mainly Unreal Engine 5.
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+### Suggestions
 
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+I would love to hear any feedback anyone has about the website or suggestions on things I could include/improve.\
+Email me: Lewisscrivens@hotmail.com with the subject GameDevForge so I don't miss it!
