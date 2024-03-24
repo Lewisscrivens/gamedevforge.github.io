@@ -15,11 +15,14 @@
 const sidebars = {
 
   modulesSidebar: [
-    'intro',
+    'introduction',
+    'modules-overview',
     {
       type: 'category',
       label: 'Java',
-      items: ['java/test-module-page'],
+        items: [
+          'java/introduction-to-java'
+        ],
     },
   ]
 
