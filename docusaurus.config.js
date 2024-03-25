@@ -1,8 +1,3 @@
-// @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
@@ -19,39 +14,25 @@ const config = {
   deploymentBranch: 'deployment',
   trailingSlash: false,
 
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'log',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
   },
 
-  presets: [
+  presets:
+  [
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-
-          // Dont plan on using github to update the pages so removing this.
-          // editUrl:
-          // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-
-          // Dont plan on using github to update the pages so removing this.
-          // editUrl:
-          //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -103,6 +84,31 @@ const config = {
     customFields: {
       WelcomeMsg: 'Welcome to the Forge!',
     },
+
+  headTags:
+  [
+    {
+      tagName: "link",
+      attributes: {
+        rel: "preload",
+        href: "static/fonts/lato/Lato-Regular.woff2",
+        as: "font",
+        type: "font/woff2",
+        crossorigin: "anonymous",
+      },
+    }
+  ],
+
+  plugins:
+  [
+    [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-B26WKDZFGC',
+        anonymizeIP: true,
+      },
+    ],
+  ],
 };
 
 export default config;

@@ -1,8 +1,18 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url('../../static/fonts/lato/Lato-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url('../../static/fonts/lato/Lato-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato-Italic';
+  src: url('../../static/fonts/lato/Lato-Italic.woff2') format('woff2');
+}
 
 :root {
   --site-primary-hue-saturation: 200 68%;
@@ -14,6 +24,10 @@
   --site-color-checkbox-checked-bg: hsl(167deg 56% 73% / 25%);
   --site-color-feedback-background: #f0f8ff;
   --docusaurus-highlighted-code-line-bg: rgb(0 0 0 / 10%);
+
+  --ifm-font-family-base: 'Lato-Regular';
+  --ifm-heading-font-family: 'Lato-Bold';
+  --ifm-font-family-monospace: 'Lato-Regular';
 
   /* Use a darker color to ensure contrast, ideally we don't need important */
   --ifm-breadcrumb-color-active: var(--ifm-color-primary-darker) !important;
