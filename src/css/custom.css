@@ -141,3 +141,9 @@ html[data-theme='dark'] {
 html[data-navbar='false'] .navbar {
   display: none;
 }
+
+/* Position on code element was too low next to other words. Moved it up slightly... */
+code {
+  position: relative;
+  bottom: 2px;
+}

@@ -1,0 +1,110 @@
+
+import QuizSection from '@site/src/components/quiz/quizSection';
+import TextTooltip from '@site/src/components/text/textTooltip/textTooltip';
+import Video from '@site/src/components/video/video';
+
+# Source Control
+
+:::note
+
+This is not a coverage of all features of source control. It is simply an introduction to them.
+
+:::
+
+Source control, also known as version control, is a system that manages changes to files over time, particularly in software development projects. It keeps files synchronized between multiple
+developers working in the same codebase while providing a historical view of the progression of a projec.
+
+Imagine you're working on a 2D game project, and you end up with a large number of files in a project. Picture a scenario where you are doing this without source control,
+but disaster strikes – your hard drive crashes, and your project vanishes into thin air.
+
+Without source control in place, there is no way to recover it. You may have planned for this in other ways like backing up the hard drive or project manually,
+but how often would you do this? You always going to run the risk of losing progress without some form of source control. The same scenario presents itself when
+you had a feature working a certain way but removed it as it was no longer needed, this workflow is destructive in general.
+
+Now picture working within a team of people, without source control, co-ordinating efforts, and consolidating changes from different contributors becomes
+a huge pain. Just having to manually merge the file changes yourself would have a host of its own issues. Ultimately this would lead to inconsistencies, conflicts, and lost progress.
+
+This is where source control steps in and saves the day. It will track any modifications made to any files living in a <TextTooltip text="Repository"/>.
+In this case, it's the version of your project that lives on GitHub. Your local version of the project is a copy.
+It's important to understand that as you are changing the contents of files, the source control detects local changes that differ from its own.
+These local changes can be synced with the repository (uploaded and downloaded), adding a new version of each file that has changed.
+
+<p>&nbsp;</p>
+<div align="center">
+
+    ```mermaid
+
+    flowchart-elk
+    A([Working Copy #1]);
+    B([Working Copy #2]);
+    C([Working Copy #3]);
+    D(Repository);
+    A---> |Commit & Push| D;
+    D<---> |Update| A;
+    D<--->B;
+    D<--->C;
+
+    ```
+</div>
+<p>&nbsp;</p>
+
+### Key Concepts
+
+#### Repository:
+- A repository, or repo, is a central location where all project files and their version history are stored.
+
+#### Commits:
+- A snapshot of the project or file at a specific point in time. When a developer makes changes to files, they create a commit to record those changes along with a descriptive message explaining the modifications.
+
+#### Branches:
+- Branches are snapshots that represent different states of a repository. Developers can create branches to work on new features or experiments without affecting the main codebase. Once the changes are tested and/or approved,
+they can be merged back into the main branch.
+
+#### Merge:
+- Merging is the process of combining changes from one branch into another. When a feature is complete and tested, developers merge the changes from their feature branch into the main branch.
+
+#### Conflict Resolution:
+- Conflicts may arise when multiple developers modify the same file simultaneously. Source control systems provide mechanisms to identify and resolve these conflicts.
+
+These are just a few areas that source control can be useful in, but we haven't even scratched the surface.\
+As you complete modules you will build on this initial knowledge and gain a much deeper understanding of source control through practical use.
+
+## GitHub
+
+GitHub is a platform built on top of <TextTooltip text="Git"/>. It extends the capabilities of Git to facilitate collaboration and project management.
+GitHub provides a centralized repository for managing changes to files over time, allowing multiple developers to work together on the same codebase seamlessly.
+It acts as a secure free cloud storage for your project files, eliminating the risk of losing progress while avoiding a destructive workflow.
+
+It provides web-based interfaces that allow developers to visualize project history, track modifications to files, and manage project milestones easily.
+As previously discussed in the source control section, leveraging GitHub, developers can synchronize their local copies of the project with the remote repository,
+ensuring that all changes are accurately tracked.
+
+GitHub's popularity stems from its user-friendly interface and large community. It isn't targeted directly at a specific area of software development but rather encompases them all.
+This attracts a diverse range of developers and projects to the platform. Another cool fact is that GitHub hosts the largest collection of <TextTooltip text="open-source"/> code on the internet.
+
+### How does it Work?
+
+To get started with GitHub, you first need to create an account by visiting the [GitHub](https://github.com/) website and signing up with your email address.
+Once you've created an account, you can customize your profile with information about yourself and from there it's a case of creating a repository for an active project your working on.
+
+### What is a Repository on GitHub?
+
+A repository is a storage space where all the files and data associated with a project are stored and managed. It serves as a container for organizing, versioning, and
+collaborating on software development projects. Each repository on GitHub typically represents a single project, such as a software application,
+a game or even a website like this one (which is actually hosted on GitHub).
+
+## Closing Thoughts
+
+GitHub is not the only source control around, in later modules we will discuss <TextTooltip text="Perforce"/> which follows the same principles but with some key differences that make it more useful for
+larger teams and projects that contain files that cannot be merged. Another worthy mention is <TextTooltip text="GitLab"/>, which you can actually host a version of privately which comes with it's
+own benefits.
+
+You should now understand why source control systems are an important part of the development process.
+Again we have just scraped the surface here and we will be developing practical skills for everything discussed and more throughout the modules.
+
+As a next step, I would highly recommend anyone starting out to watch this video from Kevin Stratvert.\
+It is split up with time-stamps but is worth a watch if you want a more in-depth explanation on key areas.
+
+<p>&nbsp;</p>
+<Video link="https://www.youtube.com/embed/tRZGeaHPoaw"/>
+<p>&nbsp;</p>

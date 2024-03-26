@@ -22,8 +22,7 @@ const config = {
     locales: ['en'],
   },
 
-  presets:
-  [
+  presets: [
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
@@ -85,8 +84,15 @@ const config = {
       WelcomeMsg: 'Welcome to the Forge!',
     },
 
-  headTags:
-  [
+  markdown: {
+    mermaid: true,
+  },
+
+  themes: [
+    '@docusaurus/theme-mermaid'
+  ],
+
+  headTags: [
     {
       tagName: "link",
       attributes: {
@@ -99,8 +105,7 @@ const config = {
     }
   ],
 
-  plugins:
-  [
+  plugins: [
     [
       '@docusaurus/plugin-google-gtag',
       {

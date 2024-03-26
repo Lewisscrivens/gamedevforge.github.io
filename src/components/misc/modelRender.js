@@ -23,7 +23,7 @@ Usage:
 
 In MD files use the following:
 
-import ModelRender from '@site/src/components/mpx/modelRender';
+import ModelRender from '@site/src/components/misc/modelRender';
 
 <ModelRender
     modelPath='models/planet/scene.gltf'

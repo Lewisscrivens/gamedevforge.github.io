@@ -54,7 +54,7 @@ Usage:
 
 In MD files use the following:
 
-import Question from '@site/src/components/mpx/question';
+import Question from '@site/src/components/quiz/question';
 
 <Question
 title="What's 2 + 2?"

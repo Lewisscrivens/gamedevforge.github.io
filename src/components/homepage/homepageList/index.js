@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import TextTooltip from '@site/src/components/text/textTooltip/textTooltip';
 
 const FeatureList = [
   {
@@ -8,8 +9,9 @@ const FeatureList = [
     Svg: require('@site/static/img/icons/java.svg').default,
     description: (
       <>
-        Learn the very basics using Java.
-        Create a basic 2D game engine using java starting from a simple <code>hello-world</code> project.
+      Learn the very basics using Java.
+      <br></br>
+      Create a basic 2D game engine using java starting from a simple <TextTooltip text="hello-world"/> project.
       </>
     )
   },
@@ -19,7 +21,9 @@ const FeatureList = [
     SvgColor: "white",
     description: (
       <>
-      Learn GitHub source control. How to store, manage and branch your projects. We will use <code>GitBash</code> and/or <code>SourceTree</code> to manage your Git repositories.
+      Learn GitHub <TextTooltip text="Source Control"/>.
+      <br></br>
+      How to store, manage and branch your projects. We will use <TextTooltip text="GitBash"/> and/or <TextTooltip text="SourceTree"/> to manage your Git repositories.
       </>
     )
   },
@@ -28,8 +32,10 @@ const FeatureList = [
     Svg: require('@site/static/img/icons/C.svg').default,
     description: (
       <>
-        Learn C++ development. How to manage memory, more complex computer architecture and much more!
-      Create a 3D game engine using <code>DirectX</code> and <code>Vulkan</code>.
+      Learn C++.
+      <br></br>
+      How to manage memory, more complex computer architecture and much more!
+      Create a 3D game engine using <TextTooltip text="DirectX"/> and <TextTooltip text="Vulkan"/>.
       </>
     )
   },
@@ -38,7 +44,9 @@ const FeatureList = [
     Svg: require('@site/static/img/icons/visual_studio.svg').default,
     description: (
       <>
-      Learn the Visual Studio IDE. General project management and config leading to more advanced features and debugging pratices.
+      Learn the Visual Studio IDE.
+      <br></br>
+      General project management and config leading to more advanced features and <TextTooltip text="Debugging"/> pratices.
       </>
     )
   },
@@ -48,7 +56,9 @@ const FeatureList = [
     SvgColor: "white",
     description: (
       <>
-      Learn how to make games in Unreal Engine 5. How to structure a game project, create re-usable assets and plugins and learn the latest game development practices like <code>data driven development</code>.
+      Learn how to make games in Unreal Engine 5.
+      <br></br>
+      How make games, create re-usable assets and plugins using the latest game development practices like <TextTooltip text="Data Driven Development"/>.
       </>
     )
   },
@@ -58,7 +68,9 @@ const FeatureList = [
     SvgColor: "lightblue",
     description: (
       <>
-      Learn how to use Perforce source control. How to host and manage your own Perforce server such as shelves, streams, tools etc.
+      Learn how to use <TextTooltip text="Perforce"/> source control.
+      <br></br>
+      How to host and manage your own Perforce server such as shelves, streams, etc.
       </>
     )
   },

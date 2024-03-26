@@ -13,11 +13,13 @@ const HomepageTextSections = [
         description: (
             <>
             Welcome to the GameDevForge!
-            <br></br> I'm Lewis a Senior Gameplay Developer currently working at BULKHEAD. 
-            I have put together this learning resource for anyone looking to become a game developer.
-            We start with the very basics of understanding the core principles of programming and work up to more advanced features.
-            See the modules page for more information.
-            Good luck!
+            <br></br>
+            I'm Lewis a Senior Gameplay Developer currently working at BULKHEAD.
+            I have put together this learning resource for both aspiring and professional game developers.
+            Resources range from basic to advanced topics.
+            <br></br>
+            <br></br>
+            <code>See the modules page</code>
             </>
         )
     }

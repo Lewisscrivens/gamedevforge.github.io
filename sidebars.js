@@ -17,8 +17,8 @@ const sidebars = {
   modulesSidebar: [
     'introduction',
     'modules-overview',
-    'github',
-    'portfolio',
+    'sourceControl',
+    //'portfolio',
     {
       type: 'category',
       label: 'Java',

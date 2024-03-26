@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Question from '@site/src/components/mpx/question';
+import Question from '@site/src/components/quiz/question';
 
 const QuizSection = ({ questions }) => {
     const [answeredQuestions, setAnsweredQuestions] = useState(0);
@@ -52,7 +52,7 @@ Usage:
 
 In MD files use the following:
 
-import QuizSection from '@site/src/components/mpx/quizSection';
+import QuizSection from '@site/src/components/quiz/quizSection';
 
 <QuizSection questions={[
   {
