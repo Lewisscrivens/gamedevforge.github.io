@@ -34,7 +34,7 @@ const FeatureList = [
       <>
       Learn C++.
       <br></br>
-      How to manage memory, more complex computer architecture and much more!
+      How to manage memory, computer architecture and much more!
       Create a 3D game engine using <TextTooltip text="DirectX"/> and <TextTooltip text="Vulkan"/>.
       </>
     )
