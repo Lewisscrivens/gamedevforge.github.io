@@ -4,7 +4,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'GameDevForge',
-  favicon: 'img/favicon.ico',
+  favicon: '/img/favicon.ico',
   url: 'https://gamedevforge.net/',
   baseUrl: '/',
 
@@ -16,6 +16,8 @@ const config = {
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'log',
+
+  tagline: 'A learning resource for both aspiring and professional game developers.',
 
   i18n: {
     defaultLocale: 'en',
