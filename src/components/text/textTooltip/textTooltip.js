@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './styles.module.css';
 import tooltipInfoMap from './tooltipInfoMap';
 
@@ -20,7 +20,11 @@ const TextTooltip = ({ text, info: overrideInfo }) => {
         setPosition({ x: e.clientX, y: e.clientY });
     };
 
-    const shiftBox = position.x + 20 > window.innerWidth - 300;
+    let shiftBox = false;
+    if (typeof window !== 'undefined') {
+        shiftBox = position.x + 20 > window.innerWidth - 300;
+    }
+
     const hoverBoxStyle = {
         position: 'fixed',
         top: position.y + 20 + 'px',
