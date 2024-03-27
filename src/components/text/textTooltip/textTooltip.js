@@ -19,11 +19,12 @@ const TextTooltip = ({ text, info: overrideInfo }) => {
     const handleMouseMove = (e) => {
         setPosition({ x: e.clientX, y: e.clientY });
     };
-    
+
+    const shiftBox = position.x + 20 > window.innerWidth - 300;
     const hoverBoxStyle = {
         position: 'fixed',
-        top: position.y - 50 + 'px', // Adjust the offset as needed
-        left: position.x + 20 + 'px', // Adjust the offset as needed
+        top: position.y + 20 + 'px',
+        left: shiftBox ? position.x - 200 + 'px': position.x + 20 + 'px',
     };
     
     return (
