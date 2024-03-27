@@ -20,16 +20,20 @@ const TextTooltip = ({ text, info: overrideInfo }) => {
         setPosition({ x: e.clientX, y: e.clientY });
     };
 
-    let shiftBox = false;
+    // This will just shift the tooltip box a given amount based off how far over to the right the mouse cursor is.
+    // I can imagine there is a proper way to do this but I am not a web developer so ¯\_(ツ)_/¯
+    let leftPosition = position.x + 20 + 'px';
     if (typeof window !== 'undefined') {
-        // Shift the box if the opened tooltip box is within 300 pixels of the max right border and is not to the left side of the screen.
-        shiftBox = position.x + 20 > window.innerWidth - 300 && position.x > (window.innerWidth / 2);
+        if (position.x + 20 > window.innerWidth - 300) {
+            let ShiftAmount = position.x / window.innerWidth;
+            leftPosition = position.x - (200 * ShiftAmount) + 'px';
+        }
     }
 
     const hoverBoxStyle = {
         position: 'fixed',
         top: position.y + 20 + 'px',
-        left: shiftBox ? position.x - 200 + 'px': position.x + 20 + 'px',
+        left: leftPosition,
     };
     
     return (
