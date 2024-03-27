@@ -22,7 +22,8 @@ const TextTooltip = ({ text, info: overrideInfo }) => {
 
     let shiftBox = false;
     if (typeof window !== 'undefined') {
-        shiftBox = position.x + 20 > window.innerWidth - 300;
+        // Shift the box if the opened tooltip box is within 300 pixels of the max right border and is not to the left side of the screen.
+        shiftBox = position.x + 20 > window.innerWidth - 300 && position.x > (window.innerWidth / 2);
     }
 
     const hoverBoxStyle = {
