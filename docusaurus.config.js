@@ -91,7 +91,15 @@ const config = {
   },
 
   themes: [
-    '@docusaurus/theme-mermaid'
+    '@docusaurus/theme-mermaid',
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      ({
+        hashed: true,
+        language: ["en"],
+        searchBarShortcut: false,
+      }),
+    ],
   ],
 
   headTags: [
@@ -114,7 +122,7 @@ const config = {
         trackingID: 'G-B26WKDZFGC',
         anonymizeIP: true,
       },
-    ],
+    ]
   ],
 };
 
