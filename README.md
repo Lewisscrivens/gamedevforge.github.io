@@ -16,3 +16,12 @@ As the modules progress there will be more specific modules based on game develo
 
 I would love to hear any feedback anyone has about the website or suggestions on things I could include/improve.\
 Email me: Lewisscrivens@hotmail.com with the subject GameDevForge so I don't miss it!
+
+### TODO:
+
+- Add https://github.com/giscus/giscus to pages to support comments.
+- Java
+- C++
+- Visual Studio
+- Perforce
+- Unreal Engine
