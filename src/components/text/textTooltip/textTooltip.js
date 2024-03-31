@@ -5,7 +5,7 @@ import tooltipInfoMap from './tooltipInfoMap';
 const TextTooltip = ({ text, info: overrideInfo }) => {
     const [hover, setHover] = useState(false);
     const [position, setPosition] = useState({ x: 0, y: 0 });
-    const defaultInfo = tooltipInfoMap[text];
+    const defaultInfo = tooltipInfoMap[text.toLowerCase()];
     const info = overrideInfo || defaultInfo || 'Missing tool-tip!';
     
     const handleMouseEnter = () => {

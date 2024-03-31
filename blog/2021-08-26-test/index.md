@@ -1,7 +1,8 @@
 ---
-slug: Test 1
-title: Test 1
+slug: Test
+title: Test
 tags: [hello, test]
+authors: [lewis]
 ---
 
 This is a test blog page.

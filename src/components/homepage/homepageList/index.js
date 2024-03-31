@@ -9,8 +9,6 @@ const FeatureList = [
     Svg: require('@site/static/img/icons/java.svg').default,
     description: (
       <>
-      Learn the very basics using Java.
-      <br></br>
       Create a basic 2D game engine using java starting from a simple <TextTooltip text="hello-world"/> project.
       </>
     )
@@ -21,8 +19,6 @@ const FeatureList = [
     SvgColor: "white",
     description: (
       <>
-      Learn GitHub <TextTooltip text="Source Control"/>.
-      <br></br>
       How to store, manage and branch your projects. We will use <TextTooltip text="GitBash"/> and/or <TextTooltip text="SourceTree"/> to manage your Git repositories.
       </>
     )
@@ -32,8 +28,6 @@ const FeatureList = [
     Svg: require('@site/static/img/icons/C.svg').default,
     description: (
       <>
-      Learn C++.
-      <br></br>
       How to manage memory, computer architecture and much more!
       Create a 3D game engine using <TextTooltip text="DirectX"/> and <TextTooltip text="Vulkan"/>.
       </>
@@ -44,8 +38,6 @@ const FeatureList = [
     Svg: require('@site/static/img/icons/visual_studio.svg').default,
     description: (
       <>
-      Learn the Visual Studio IDE.
-      <br></br>
       General project management and config leading to more advanced features and <TextTooltip text="Debugging"/> pratices.
       </>
     )
@@ -56,8 +48,6 @@ const FeatureList = [
     SvgColor: "white",
     description: (
       <>
-      Learn how to make games in Unreal Engine 5.
-      <br></br>
       How make games, create re-usable assets and plugins using the latest game development practices like <TextTooltip text="Data Driven Development"/>.
       </>
     )
@@ -68,8 +58,6 @@ const FeatureList = [
     SvgColor: "lightblue",
     description: (
       <>
-      Learn how to use <TextTooltip text="Perforce"/> source control.
-      <br></br>
       How to host and manage your own Perforce server such as shelves, streams, etc.
       </>
     )
