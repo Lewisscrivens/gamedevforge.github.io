@@ -12,11 +12,6 @@ This is the GitHub Pages repo where I host [GameDevForge](https://gamedevforge.n
 Learning to code is broken down into modules starting with the basic principles up to more advanced topics.\
 As the modules progress there will be more specific modules based on game development concepts or specific engines mainly Unreal Engine 5.
 
-### Suggestions
-
-I would love to hear any feedback anyone has about the website or suggestions on things I could include/improve.\
-Email me: Lewisscrivens@hotmail.com with the subject GameDevForge so I don't miss it!
-
 ### TODO:
 
 - Add https://github.com/giscus/giscus to pages to support comments.
