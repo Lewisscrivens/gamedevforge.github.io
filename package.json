@@ -19,6 +19,7 @@
     "@docusaurus/preset-classic": "^3.2.0",
     "@docusaurus/theme-mermaid": "^3.2.0",
     "@easyops-cn/docusaurus-search-local": "^0.40.1",
+    "@giscus/react": "^3.0.0",
     "@mdx-js/react": "^3.0.0",
     "@react-three/drei": "^9.102.6",
     "@react-three/fiber": "^8.15.19",

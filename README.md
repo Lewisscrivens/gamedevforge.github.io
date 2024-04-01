@@ -19,7 +19,6 @@ Email me: Lewisscrivens@hotmail.com with the subject GameDevForge so I don't mis
 
 ### TODO:
 
-- Add https://github.com/giscus/giscus to pages to support comments.
 - Java
 - C++
 - Visual Studio
