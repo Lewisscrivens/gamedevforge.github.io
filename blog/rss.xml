@@ -4,24 +4,14 @@
         <title>GameDevForge Blog</title>
         <link>https://gamedevforge.net/blog</link>
         <description>GameDevForge Blog</description>
-        <lastBuildDate>Sat, 16 Mar 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 26 Aug 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[Test 1]]></title>
-            <link>https://gamedevforge.net/blog/Test 1</link>
-            <guid>https://gamedevforge.net/blog/Test 1</guid>
-            <pubDate>Sat, 16 Mar 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[This is a test blog page.]]></description>
-            <content:encoded><![CDATA[<p>This is a test blog page.</p>]]></content:encoded>
-            <category>hello</category>
-            <category>test</category>
-        </item>
-        <item>
-            <title><![CDATA[Test 2]]></title>
-            <link>https://gamedevforge.net/blog/Test 2</link>
-            <guid>https://gamedevforge.net/blog/Test 2</guid>
+            <title><![CDATA[Test]]></title>
+            <link>https://gamedevforge.net/blog/Test</link>
+            <guid>https://gamedevforge.net/blog/Test</guid>
             <pubDate>Thu, 26 Aug 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[This is a test blog page.]]></description>
             <content:encoded><![CDATA[<p>This is a test blog page.</p>]]></content:encoded>

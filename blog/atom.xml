@@ -2,28 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gamedevforge.net/blog</id>
     <title>GameDevForge Blog</title>
-    <updated>2024-03-16T00:00:00.000Z</updated>
+    <updated>2021-08-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gamedevforge.net/blog"/>
     <subtitle>GameDevForge Blog</subtitle>
     <icon>https://gamedevforge.net/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[Test 1]]></title>
-        <id>https://gamedevforge.net/blog/Test 1</id>
-        <link href="https://gamedevforge.net/blog/Test 1"/>
-        <updated>2024-03-16T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This is a test blog page.]]></summary>
-        <content type="html"><![CDATA[<p>This is a test blog page.</p>]]></content>
-        <category label="hello" term="hello"/>
-        <category label="test" term="test"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Test 2]]></title>
-        <id>https://gamedevforge.net/blog/Test 2</id>
-        <link href="https://gamedevforge.net/blog/Test 2"/>
+        <title type="html"><![CDATA[Test]]></title>
+        <id>https://gamedevforge.net/blog/Test</id>
+        <link href="https://gamedevforge.net/blog/Test"/>
         <updated>2021-08-26T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[This is a test blog page.]]></summary>
         <content type="html"><![CDATA[<p>This is a test blog page.</p>]]></content>
+        <author>
+            <name>Lewis Scrivens</name>
+            <uri>https://github.com/lewisscrivens</uri>
+        </author>
         <category label="hello" term="hello"/>
         <category label="test" term="test"/>
     </entry>

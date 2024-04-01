@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgamedevforge=self.webpackChunkgamedevforge||[]).push([[5431],{960:e=>{e.exports=JSON.parse('{"label":"Git","permalink":"/docs/tags/git","allTagsPath":"/docs/tags","count":1,"items":[{"id":"source-control","title":"Source Control","description":"Introduction to source control and git.","permalink":"/docs/source-control"}],"unlisted":false}')}}]);
