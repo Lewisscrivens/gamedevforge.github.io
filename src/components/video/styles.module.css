@@ -7,8 +7,8 @@
 
 @media only screen and (max-width: 768px) {
     .video {
-        width: 412px;
-        height: 231px;
+        width: 350px;
+        height: 196px;
         display: block;
         margin: 0 auto;
     }
