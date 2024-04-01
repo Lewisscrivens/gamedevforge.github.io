@@ -4,3 +4,12 @@
     display: block;
     margin: 0 auto;
 }
+
+@media only screen and (max-width: 768px) {
+    .video {
+        width: 412px;
+        height: 231px;
+        display: block;
+        margin: 0 auto;
+    }
+}
