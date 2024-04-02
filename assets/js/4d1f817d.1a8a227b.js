@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgamedevforge=self.webpackChunkgamedevforge||[]).push([[9870],{4359:e=>{e.exports=JSON.parse('{"title":"Fundamentals","slug":"/category/fundamentals","permalink":"/docs/category/fundamentals","navigation":{"previous":{"title":"Core","permalink":"/docs/category/core"},"next":{"title":"Primitive Types","permalink":"/docs/java-primitive-types"}}}')}}]);
