@@ -24,6 +24,13 @@ const TooltipInfoMap = {
     'console' : 'A text-based interface for user-computer interaction, enabling text input and output, often used for program execution, system monitoring, and debugging',
     'program arguments' : 'Flags or values that you can pass into an application. Can be viewed as inputs that can enable/disable certain features or functionality of an application',
     'environment variables' : 'Variables that are part of the operating systems environment. They store information such as paths to important directories, system configurations, or user preferences',
+    'variable' : 'A symbolic name that represents a stored value in code',
+    'class' : 'A container defining variables and functionality to serve a specific purpose in an application or feature',
+    'abstraction' : 'The process of simplifying complex systems by focusing on essential properties while hiding unnecessary details',
+    'inheritance' : 'A feature of object-oriented programming where a new class inherits properties and behaviors (methods) from a given class',
+    'polymorphism' : 'A feature of object-oriented programming where different classes can be treated interchangeably, allowing flexible method behaviors that can be overriden in a hierarchical class structure',
+    'signed' : 'Signed data types reserve one bit to represent the sign of the value, allowing for both positive and negative values',
+    'unsigned' : 'Unsigned data types use all bits to represent the only positive values'
 };
 
 export default TooltipInfoMap;
