@@ -15,10 +15,10 @@ manipulated for a given <TextTooltip text="variable"/>. Understanding data types
 task.
 
 Variables must have a declared type for them to be interpreted correctly, unlike simpler programming languages that will automatically detect
-this based off what is actively being stored in them. There are many different primitive types supported by Java, they represent
-single values and are directly supported.
+this based off what is actively being stored in them. There are many different data types in Java, the most basic types are known as primitive types, they represent
+single values and are directly supported as part of the language.
 
-This differs from a Java Object which is an instance of a <TextTooltip text="Class"/>. Objects enable the implementation of concepts like <TextTooltip text="Abstraction"/>,
+Other types such as Java Objects which is are instances of a given <TextTooltip text="Class"/>. Objects enable the implementation of concepts like <TextTooltip text="Abstraction"/>,
 <TextTooltip text="Inheritance"/>, and <TextTooltip text="Polymorphism"/>, which we will explore in more detail in the Object Orientation Page.
 <!-- TODO: Add link when no longer a draft. [Object Orientation Page](/docs/java-object-orientation) -->
 
@@ -28,7 +28,7 @@ This page outlines what primitive types are, in later pages based on variables, 
 
 :::
 
-In total there are eight primitive types in Java:
+In total there are 8 primitive types in Java:
 
 - <code>boolean</code>
 - <code>char</code>
@@ -41,20 +41,20 @@ In total there are eight primitive types in Java:
 
 ## Bits
 
-An important thing to understand before moving on to the explanations of primitive data types is bits. Think of a bit as the smallest unit of information in a computer.
+An important thing to understand before moving on to the explanations of primitive data types are bits. Think of a bit as the smallest unit of information in a computer.
 It's like a tiny switch that can be either "off" or "on", but in computers they are interpreted as binary, so '0' or '1'.
 
 Now, when we group bits together, we can represent more complex information. For example, with just one bit, we can represent two possible values (0 or 1).
 But if we have two bits, we can represent four possible values (00, 01, 10, 11). This scales exponentially as we add more bits to represent a given value or in this case data type.
 
 In computer memory and data storage, information is stored using combinations of bits. For example, text, images, and videos are all stored as patterns of bits.
-This is not only the case for memory and storage but also for computation, the way computers perform calculations, make decisions, and execute instructions is
+This is also the case for for computation, the way computers perform calculations, make decisions, and execute instructions is
 done by manipulating bits in various ways.
 
 ## Boolean
 
-The boolean type can have one of two values, <code>true</code> and <code>false</code>. It is used for evaluating logical conditions, it is typically used
-for comparisons or control flow statements, such as if statements, while loops, for loops etc. all of which we will later go over in the Control Flow Page.
+The boolean type can have one of two values, <code>true</code> and <code>false</code>. It is used for evaluating logical conditions, and is typically used
+for comparisons or in control flow statements, such as if statements, while loops, for loops etc. all of which we will later go over in the Control Flow Page.
 <!-- TODO: Add link when no longer a draft. [Control Flow Page](/docs/java-control-flow) -->
 
 When a variable makes use of the boolean type, you would initialize it by setting it to true or false.
@@ -66,7 +66,7 @@ boolean bThisIsFalse = false;      // Initialized with the value false
 boolean bNotInitialized;                // Non-initialized so the values default is false
 ```
 
-<code>Typically occupies 1 bit but is not explicitly defined</code>
+<code>Typically stored using 1 bit but this is not explicitly defined in Java</code>
 
 ## Char
 
@@ -101,12 +101,10 @@ char nullChar = '\u0000';        // Initialized with the null character
 ## Byte
 
 The byte type represents an 8-bit <TextTooltip text="signed"/> integer. It can hold integer values ranging from -128 to 127. These types are most commonly used when memory
-conservation is required, dealing with raw binary data, or when there is a very small range of values expected. If treated as a <TextTooltip text="unsigned"/> integer it can be
-interpreted as 0 to 255 but that will be discussed in more detail in later pages.
+conservation is required, dealing with raw binary data, or when there is a very small range of values expected.
 
-When a variable makes use of the char byte, you can initialize it with an integer value within the range of -128 to 127.
 If you choose not to initialize a byte variable, it will automatically be assigned a default value of 0.
-If you choose to initialize a byte variable outside of the -128 to 127 range will result in a compilation error.
+If you choose to initialize a byte variable outside of the types range, will result in a compilation error.
 
 ```java
 byte smallNumber = 42;                  // Initialized with the value 42
@@ -115,17 +113,15 @@ byte defaultValue;                              // Non-initialized so the values
 byte errorValue = 1000;                 // Value is outside of the types range, would result in a compilation error
 ```
 
-<code>Occupies 8 bits</code>
+<code>Stored using 8 bits</code>
 
 ## Short
 
 The short type represents a 16-bit <TextTooltip text="signed"/> integer. It can hold integer values ranging from -32,768 to 32,767. These types are commonly used when memory
-conservation is required or when dealing with data that falls within a moderate range of values. If treated as a <TextTooltip text="unsigned"/> integer it can be
-interpreted as 0 to 65,535 but that will be discussed in more detail in later pages.
+conservation is required or when dealing with data that falls within a moderate range of values.
 
-When using a variable of type short, you can initialize it with an integer value within the range of -32,768 to 32,767.
 If you choose not to initialize a short variable, it will automatically be assigned a default value of 0.
-Attempting to initialize a short variable outside of the specified range will result in a compilation error.
+Attempting to initialize a short variable outside of the types range, will result in a compilation error.
 
 ```java
 short smallNumber = 5000;                    // Initialized with the value 5000
@@ -134,17 +130,15 @@ short defaultValue;                                      // Non-initialized so t
 short errorValue = 123456;                   // Value is outside of the types range, would result in a compilation error
 ```
 
-<code>Occupies 16 bits</code>
+<code>Stored using 16 bits</code>
 
 ## Int
 
 The int type represents a 32-bit <TextTooltip text="signed"/> integer. It can hold integer values ranging from -2,147,483,648 to 2,147,483,647.
-These types are commonly used for general-purpose integer-based calculations and when dealing with data that requires a wider range of values. Java doesn't directly
-support <TextTooltip text="unsigned"/> numerical types, to treat it as an unsigned integer you would need to use a long type to represent the range as 0 to 4,294,967,295.
+These types are commonly used for general-purpose integer-based calculations and when dealing with data that requires a wider range of values.
 
-When using a variable of type int, you can initialize it with an integer value within the range of -2,147,483,648 to 2,147,483,647.
 If you choose not to initialize an int variable, it will automatically be assigned a default value of 0.
-Attempting to initialize an int variable outside of the specified range will result in a compilation error.
+Attempting to initialize an int variable outside of the types range, will result in a compilation error.
 
 ```java
 int smallNumber = 5;                                   // Initialized with the value 5
@@ -153,7 +147,7 @@ int defaultValue;                                            // Non-initialized 
 int errorValue = 123456789;                // Value is outside of the types range, would result in a compilation error
 ```
 
-<code>Occupies 32 bits</code>
+<code>Stored using 32 bits</code>
 
 ## Long
 
@@ -161,9 +155,8 @@ The long type represents a 64-bit <TextTooltip text="signed"/> integer.
 It can hold integer values ranging from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807.
 These types are commonly used when dealing with very large integer values or when a wider range of values is required compared to int.
 
-When using a variable of type long, you can initialize it with an integer value within the range of -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807.
 If you choose not to initialize a long variable, it will automatically be assigned a default value of 0. 
-Attempting to initialize a long variable outside of the specified range will result in a compilation error.
+Attempting to initialize a long variable outside of the types range, will result in a compilation error.
 
 ```java
 long smallNumber = 100;                             // Initialized with the value 100
@@ -172,34 +165,34 @@ long defaultValue;                                            // Non-initialized
 long errorValue = 10000000000000000000000;     // Value is outside of the types range, would result in a compilation error
 ```
 
-<code>Occupies 64 bits</code>
+<code>Stored using 64 bits</code>
 
 ## Float
 
 The float type represents a single-precision 32-bit floating-point number. It can hold decimal values with a precision of 7 digits.
 These types are commonly used when dealing with decimal numbers that do not require high levels of precision, such as scientific calculations or representing fractional values,
-so for game calculations that are approximated, they are widely used.
+so for calculations in games that are usually approximated, they are widely used.
 
-To expand on what a floating point is, take the number -1.2651111. We can split this up to the following:
+To expand on what a float type is, take the number -1.2651111. We can split this up to the following:
 
 - 1 bit is used to represent the sign <code>-</code>.
-- 8 bits for the exponent <code>1</code>.
-- 23 bits for the mantissa <code>2651111</code>.
+- 8 bits for the Exponent <code>1</code>.
+- 23 bits for the Mantissa <code>2651111</code>.
 
 ![IntelliJ Download](./img/IEEE-754-Floating-Point-Standard.webp)
 
 :::note
 
-This is a simplified explanation. If you're' interested in learning more on this topic. Look into IEEE Standard 754 Floating Point Numbers.
+This is a simplified explanation. If you're interested in learning more on this topic. Look into IEEE Standard 754 Floating Point Numbers.
 
 :::
 
-A float has limited precision and can only represent a certain number of decimal digits.
-As the exponent increases, the bits required to represent the value increases (Think about it, a byte has only 8 bits and can only represent a value between -128 to 127).
+A float has limited precision and can only represent a certain number of decimal places.
+As the Exponent increases, so do the bits required to represent the value.
 
-Take the value 12557.2651111, the exponent has exceeded the 8 bits it originally had to represent its value. To store it, the number of bits representing
-the mantissa (decimal value) will need to reduce therefore reducing its precision, in this case, it will be rounded to fit this new precision.
-So storing 12557.2651111 would result in a float value of 12557.265.
+Take the value 12557.2651111, the Exponent has exceeded the 8 bits it originally had to represent its value. To store it, the number of bits representing
+the Mantissa (decimal value) will need to reduce, therefore reducing its precision. In this case, it will be rounded to fit this new precision.
+So storing 12557.2651111 would result in a float value of <code>12557.265f</code>.
 
 ```java
 float smallNumber = 3.14f;                          // Initialized with the value 3.1400000
@@ -208,7 +201,7 @@ float defaultValue;                                            // Non-initialize
 float errorValue = 1111111111111.1111111111111f;     // Value is outside of the types range, would result in a compilation error
 ```
 
-<code>Occupies 32 bits</code>
+<code>Stored using 32 bits</code>
 
 ## Double
 
@@ -216,14 +209,15 @@ The double type represents a double-precision 64-bit floating-point number. It c
 These types are commonly used when dealing with decimal numbers that require higher levels of precision, such as financial calculations, scientific computations,
 or representing large or small quantities with high accuracy.
 
-To expand on what a floating point is, let's consider the number -1.26511111212331. We can split this up as follows:
+To expand on what a double type is, let's consider the number -1.26511111212331. We can split this up as follows:
 
 - 1 bit is used to represent the sign <code>-</code>.
-- 11 bits for the exponent <code>1</code>.
-- 52 bits for the mantissa <code>-</code>.
+- 11 bits for the Exponent <code>1</code>.
+- 52 bits for the Mantissa <code>-</code>.
 
-I won't go in to much more detail than this, the concept is the same as the float but instead of single precision we have double precision allowing larger values in both the
-exponent and matissa parts of the number.
+Much like the float, as the Exponent grows in size the decimal places become less precise. I won't go in to much more detail than this,
+the concept is the same as the float but instead of single precision we have double precision allowing larger values in both the
+Exponent and Mantissa.
 
 ```java
 double smallNumber = 3.14f;                          // Initialized with the value 3.1400000
@@ -231,4 +225,4 @@ double negativeNumber = -123.45f;          // Initialized with the value -123.45
 double defaultValue;                                            // Non-initialized so the values default is 0.0
 ```
 
-<code>Occupies 64 bits</code>
+<code>Stored using 64 bits</code>
