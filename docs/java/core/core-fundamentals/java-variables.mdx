@@ -1,13 +1,245 @@
 ---
-description: What are variables in Java?
+description: What are the different types of variables in Java?
 tags: [Java, Beginner, Core]
 slug: /java-variables
 sidebar_position: 2
-draft: true
+draft: false
 ---
 
 import TextTooltip from '@site/src/components/text/textTooltip/textTooltip';
 
 # Variables
 
-TBD
+Java uses variables to store values of a declared type in memory.
+
+A variable in Java is a named value in memory, depending on the type of variable it can be
+manipulated by <TextTooltip text="operators"/>. Each variable must be declared with a specific data type,
+which determines the kind of data it will hold and the operations that can be performed on/with it.
+
+## Declaration
+
+To make use of variables they must first be declared. You can do this by entering the variables type,
+then its name.
+
+```java
+int someNumber = 10;
+boolean bSomeBoolean = true;
+char someCharacter = 'A';
+```
+
+Consider the declared variable <code>int someNumber = 10;</code> here's a breakdown:
+
+- Data type <code>int</code>
+- Variable name <code>someNumber</code>
+- Value <code>10</code>
+- Ending statement <code>;</code>
+
+A variable name cannot be anything, they have to follow a certain rules:
+
+- The first character cannot be a number.
+- Characters used must be a letter (a-z or A-Z), number (0-9), dollar sign ($), or underscore (_).
+- Names are case-sensitive. <code>myVariable</code> and <code>myvariable</code> are different.
+- Reserved words in Java cannot be used as variable names. Things like <code>int</code>, <code>class</code>, <code>public</code>, etc.
+- Names should not contain whitespace or special characters like !, @, #, %, etc.
+
+```java
+// Error
+int 1stNumber = 1;           // Error, first character is a number
+
+// Error
+boolean classIsOpen = false; // Error, class is used in name
+
+// Error
+boolean bStopApp! = false;   // Error, '!' is used in name
+```
+
+## Initialisation
+
+Initialisation is an important step when declaring a variable. In the Declaration section,
+all examples are initialised during declaration.
+This doesn't have to be the case though, variables can be initialised in different ways.
+
+To start with here is an uninitialized variable:
+
+```java
+// Uninitialized variable
+int numberOfApples;
+
+// Using an uninitialized variable will result in an error
+// Error
+System.out.println("Number of apples: " + numberOfApples);
+```
+
+Variables can be initialised either during declaration or on a separate line. As shown in the example above, attempting to use
+an uninitialized variable will result in an error.
+
+```java
+// Seperate initialisation
+int numberOfApples;
+numberOfApples = 5;
+
+// Declaration initialisation
+int numberOfApples = 5;
+```
+
+## Variable Inference
+
+In Java, you can infer a type when declaring a variable by using the <code>var</code> keyword.
+It can only be used if you are initialising during declaration like so.
+
+```java
+var someNumber = 5;         // This will default the type to int
+var someOtherNumber = 5.5f; // This will default the type to float
+```
+
+:::note
+
+Using variable inference is a matter of personal preference.\
+While it can have its benefits, beginners might find it easier to explicitly declare variable types.
+
+:::
+
+This can be used however you see fit, I mainly use it for complex types; these could change with different versions
+of Java or external API. Using var in these scenarios can avoid the need to reflect these changes in any
+pre-existing code when updating to these newer versions.
+
+Some other articles you might read mention it improves readability, but I disagree. It's a hot topic
+especially in the game industry where C++ is one of the most common languages with its equivalent being the
+<code>auto</code> keyword.
+
+## Types of Variables
+
+In Java there are three main types of variables:
+
+- <code>Local variables</code>
+- <code>Instance variables</code>
+- <code>Static variables</code>
+
+:::note
+
+Some descriptions mention classes, scopes and methods. These are all discussed in later pages.
+
+:::
+
+### Local Variables
+
+Local variables are declared within a methods local <TextTooltip text="scope"/>, once the scope has ended
+its local variables are destroyed. This of course means you cannot access local variables from outside their scope.
+
+These are widely used for various reasons, for holding values temporarily to provide some intended
+functionality of a method.
+
+```java
+public void exampleMethod() {
+    // This is a local variable
+    // Highlight
+    int localVariable = 10;
+    System.out.println(localVariable); // It can be used within this method
+}
+
+public void otherMethod() {
+    // This would throw an error, cannot access localVariable from outside of its local scope
+    // Error
+    System.out.println(localVariable);
+}
+```
+
+### Instance Variables
+
+Instance variables also known as class properties, are declared in a classes scope, but outside any of its methods.
+They are created and tied to an object (a <TextTooltip text="class instance"/>) when its created.
+
+We will discuss these variables in more detail in the classes page, but put simply, they exist
+while their owning object exists, and are destroyed when that object is destroyed.
+
+Each object of a class has its own copy of the instance variables.
+This means that if you change the value of an instance variable in one object,
+it does not affect the value of that same variable in other objects of the same class type.
+
+```java
+public class ExampleClass {
+
+    // This is an instance variable
+    int instanceVariable = 10;
+
+    public void exampleMethod() {
+        // It can be used throughout the classes scope
+        System.out.println(instanceVariable);
+    }
+
+    public void otherMethod() {
+        System.out.println(instanceVariable);
+    }
+}
+```
+
+### Static Variables
+
+Static variables, much like instance variables are declared within a classes scope, but outside any
+of its methods. However, unlike instance variables, static variables are not tied to any specific object;
+instead, they are shared among all objects of the class.
+
+If you change the value of a static variable in one object, it changes for all objects of the class.
+They can also be accessed without requiring an object of the class they are declared within, instead
+you can use the class directly.
+
+They are created when the class itself is loaded into memory and are destroyed when the
+class is unloaded. They are typically used for values which are supposed to be shared across
+all instances of a class.
+
+```java
+public class ExampleClass {
+
+    // This is a static variable
+    static int staticVariable = 10;
+
+    public void printStaticVariable() {
+        System.out.println(staticVariable);
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        // Create two instances of the ExampleClass type
+        ExampleClass classInstanceA = new ExampleClass();
+        ExampleClass classInstanceB = new ExampleClass();
+
+        // Print starting value
+        System.out.println(ExampleClass.staticVariable);
+
+        // Increase the static variable
+        ExampleClass.staticVariable++;
+        ExampleClass.staticVariable++;
+
+        // For both objects of ExampleClass increase and print the static variables value
+        classInstanceA.printStaticVariable();
+        classInstanceB.printStaticVariable();
+    }
+}
+```
+
+Output:
+
+```
+10
+12
+12
+```
+
+## Constants
+
+Constants in Java are variables whose values cannot be changed once they are assigned.
+Any variable can be made a constant by using the <code>final</code> keyword during its declaration
+or in a class's constructor.
+
+The naming convention for constants is usually declared using uppercase letters with underscores to
+separate the words, although this is optional. They are typically leveraged to define fixed values that
+are used in multiple places, such as mathematical constants, configuration values, error messages etc.
+
+```java
+// These are constant static variables
+public static final double PI = 3.141592653589793; // Pi for mathematical calculations
+public static final int DEFAULT_TIMEOUT = 5000;    // Error message for an application timeout
+```
