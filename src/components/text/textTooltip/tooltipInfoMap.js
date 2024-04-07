@@ -28,9 +28,13 @@ const TooltipInfoMap = {
     'class' : 'A container defining variables and functionality to serve a specific purpose in an application or feature',
     'abstraction' : 'The process of simplifying complex systems by focusing on essential properties while hiding unnecessary details',
     'inheritance' : 'A feature of object-oriented programming where a new class inherits properties and behaviors (methods) from a given class',
-    'polymorphism' : 'A feature of object-oriented programming where different classes can be treated interchangeably, allowing flexible method behaviors that can be overriden in a hierarchical class structure',
+    'polymorphism' : 'A feature of object-oriented programming where different classes can be treated interchangeably, allowing flexible method behaviors that can be overridden in a hierarchical class structure',
     'signed' : 'Signed data types reserve one bit to represent the sign of the value, allowing for both positive and negative values',
-    'unsigned' : 'Unsigned data types use all bits to represent the only positive values'
+    'unsigned' : 'Unsigned data types use all bits to represent the only positive values',
+    'operators' : 'Operators are symbols that perform operations on operands. They can be arithmetic (like +, -, *, /), relational (like ==, !=, >, <), logical (like &&, ||), and more',
+    'scope' : 'Scopes determine where a variable or a function can be accessed. There are two main types of scope: local and global',
+    'class instance' : 'A single occurrence of an object, created from a class. It has its own properties and methods',
+    'refactor' : 'Process of improving code structure without altering its functionality for better readability and maintainability',
 };
 
 export default TooltipInfoMap;

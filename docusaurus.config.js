@@ -75,6 +75,17 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
         additionalLanguages: ['powershell', 'java'],
+        magicComments: [
+          {
+            className: 'theme-code-block-highlighted-line',
+            line: 'Highlight',
+            block: { start: 'Highlight Start', end: 'Highlight End' },
+          },
+          {
+            className: 'code-block-error-line',
+            line: 'Error',
+          },
+        ],
       },
       colorMode: {
         defaultMode: 'dark',
@@ -103,26 +114,28 @@ const config = {
     ],
   ],
 
-  headTags: [
-    {
-      tagName: "link",
-      attributes: {
-        rel: "preload",
-        href: "static/fonts/lato/Lato-Regular.woff2",
-        as: "font",
-        type: "font/woff2",
-        crossorigin: "anonymous",
-      },
-    }
-  ],
+/*
+headTags: [
+  {
+    tagName: "link",
+    attributes: {
+      rel: "preload",
+      href: "static/fonts/lato/Lato-Regular.woff2",
+      as: "font",
+      type: "font/woff2",
+      crossorigin: "anonymous",
+    },
+  }
+],
+*/
 
   plugins: [
     [
       '@docusaurus/plugin-google-gtag',
-      {
-        trackingID: 'G-B26WKDZFGC',
-        anonymizeIP: true,
-      },
+        {
+          trackingID: 'G-B26WKDZFGC',
+          anonymizeIP: true,
+        },
     ]
   ],
 };
