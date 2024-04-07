@@ -18,3 +18,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Ignore .idea folder
+.idea/*
+
+# Except for .idea/runConfigurations folder and its contents
+!.idea/runConfigurations/
+!.idea/runConfigurations/*
