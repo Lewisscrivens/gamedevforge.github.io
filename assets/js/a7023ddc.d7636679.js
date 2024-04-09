@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgamedevforge=self.webpackChunkgamedevforge||[]).push([[9267],{8289:e=>{e.exports=JSON.parse('[{"label":"Welcome","permalink":"/blog/tags/welcome","count":1}]')}}]);
