@@ -17,7 +17,7 @@
             <content:encoded><![CDATA[<p>Welcome to GameDevForge!</p>
 <p>I've played with the idea of creating something along these lines for a while. Originally, I planned for a blog where I would post about useful tips
 and tricks I've learned over the years. However, after seeing the knowledge level of a few people fresh out of University, I decided to expand the
-idea into a full-blown learning resource for all things game development.</p>
+idea into a learning and documentation resource for all things game development.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="who-am-i">Who am I?<a href="https://gamedevforge.net/blog/Welcome#who-am-i" class="hash-link" aria-label="Direct link to Who am I?" title="Direct link to Who am I?">​</a></h2>
 <p>I'm Lewis, a Senior Game Developer currently working at BULKHEAD. I've been in the industry for around 5 years now and have worked on a variety of
 projects ranging from virtual reality training simulations to multiplayer first-person shooters. I have touched on many different areas like gameplay,
@@ -71,7 +71,7 @@ be my main blogging platform.</p>
 <p>I have already got a lot of work ahead of me, but who knows? I may expand these plans into new areas or ideas as time goes on.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="suggestions">Suggestions<a href="https://gamedevforge.net/blog/Welcome#suggestions" class="hash-link" aria-label="Direct link to Suggestions" title="Direct link to Suggestions">​</a></h2>
 <p>As a community open source project, I hope as time goes on that the community can help me improve and grow this resource.
-If you have any suggestions or ideas, comment on this post.</p>
+If you have any suggestions or ideas, comment on the <a href="https://github.com/Lewisscrivens/gamedevforge.github.io/discussions/1" target="_blank" rel="noopener noreferrer">GitHub Feedback</a> discussion.</p>
 <p>I look forward to hearing from you!</p>]]></content:encoded>
             <category>Welcome</category>
         </item>
