@@ -65,6 +65,21 @@ const config = {
           //   label: 'YouTube',
           //   position: 'right',
           // },
+          {
+            label: 'Contact',
+            position: 'right',
+            type: 'dropdown',
+            items: [
+              {
+                href: 'https://github.com/Lewisscrivens/gamedevforge.github.io/discussions/1',
+                label: 'Feedback',
+              },
+              {
+                href: 'https://lewisscrivens.com',
+                label: 'Lewis Scrivens',
+              }
+            ],
+          },
         ],
       },
       footer: {
