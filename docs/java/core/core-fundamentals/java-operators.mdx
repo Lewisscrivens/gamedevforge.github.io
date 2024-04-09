@@ -10,4 +10,70 @@ import TextTooltip from '@site/src/components/text/textTooltip/textTooltip';
 
 # Operators
 
-TBD
+# Operators
+
+Operators in Java are special symbols that perform specific operations on one, two, or three operands, and then return a result.
+
+## Types of Operators
+
+Java supports several types of operators, which are:
+
+- **Arithmetic Operators**: These are used to perform basic mathematical operations. Examples include `+`, `-`, `*`, `/`, and `%`.
+
+- **Relational Operators**: These are used to compare two values. Examples include `==`, `!=`, `>`, `<`, `>=`, and `<=`.
+
+- **Logical Operators**: These are used to perform logical operations (i.e., operations that return a boolean value). Examples include `&&`, `||`, and `!`.
+
+- **Assignment Operators**: These are used to assign a value to a variable. The simplest assignment operator is `=`. Others include `+=`, `-=`, `*=`, `/=`, and `%=`.
+
+- **Unary Operators**: These are used to perform operations on a single operand. Examples include `++`, `--`, and `!`.
+
+- **Bitwise Operators**: These are used to perform operations on the bits of a number. Examples include `&`, `|`, `^`, `~`, `<<`, `>>`, and `>>>`.
+
+- **Ternary Operator**: This is a shorthand for an `if-else` statement and is the only operator in Java that works on three operands.
+
+## Examples
+
+Here are some examples of these operators in use:
+
+```java
+int a = 10;
+int b = 20;
+
+// Arithmetic Operators
+System.out.println("a + b = " + (a + b));  // Addition
+System.out.println("a - b = " + (a - b));  // Subtraction
+System.out.println("a * b = " + (a * b));  // Multiplication
+System.out.println("b / a = " + (b / a));  // Division
+System.out.println("b % a = " + (b % a));  // Modulus
+
+// Relational Operators
+System.out.println("a == b = " + (a == b));  // Equal to
+System.out.println("a != b = " + (a != b));  // Not equal to
+System.out.println("a > b = " + (a > b));    // Greater than
+System.out.println("a < b = " + (a < b));    // Less than
+System.out.println("b >= a = " + (b >= a));  // Greater than or equal to
+System.out.println("b <= a = " + (b <= a));  // Less than or equal to
+
+// Logical Operators
+boolean x = true;
+boolean y = false;
+System.out.println("x && y = " + (x&&y));  // Logical AND
+System.out.println("x || y = " + (x||y));  // Logical OR
+System.out.println("!x = " + !x);          // Logical NOT
+
+// Assignment Operators
+a += b;
+System.out.println("a += b = " + a);  // It adds right operand to the left operand and assign the result to left operand
+
+// Unary Operators
+a++;
+System.out.println("a++ = " + a);  // Increment operator increases the value of variable by 1
+
+// Bitwise Operators
+System.out.println("a & b = " + (a & b));  // Bitwise AND
+
+// Ternary Operator
+int min = (a < b) ? a : b;
+System.out.println("min = " + min);  // It returns the minimum between a and b
+```
