@@ -131,3 +131,7 @@ html[data-theme='dark'] {
 html[data-navbar='false'] .navbar {
   display: none;
 }
+
+.token.comment, .token.block-comment, .token.prolog, .token.doctype, .token.cdata {
+  color: #00a400;
+}

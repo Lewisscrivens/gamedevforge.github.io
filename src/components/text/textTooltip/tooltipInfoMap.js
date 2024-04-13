@@ -35,6 +35,10 @@ const TooltipInfoMap = {
     'scope' : 'Scopes determine where a variable or a function can be accessed. There are two main types of scope: local and global',
     'class instance' : 'A single occurrence of an object, created from a class. It has its own properties and methods',
     'refactor' : 'Process of improving code structure without altering its functionality for better readability and maintainability',
+    'operand' : 'An operand in programming is a data item that operators perform operations on',
+    'operands' : 'Operands in programming are a data items that operators perform operations on',
+    'arithmetic' : 'Refers to dealing with numerical computation using math, such as addition, subtraction, multiplication, and division',
+
 };
 
 export default TooltipInfoMap;

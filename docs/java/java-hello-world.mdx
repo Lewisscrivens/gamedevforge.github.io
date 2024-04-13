@@ -26,31 +26,31 @@ To get started with creating a project, open the IntelliJ IDEA IDE. You should b
 Moving forward, you will want to create a folder somewhere to keep your projects.
 I suggest for now creating a folder named GameDevForge under your Documents folder and selecting this as the Location for the hello-world project.
 
-- <code>Name</code>: Java-Hello-World - (The name of your project)
-- <code>Location</code>: C:\Users\YOUR_USER_NAME\Documents
-- <code>Language</code>: Java
-- <code>JDK</code>: Oracle OpenJDK version 22
+- `Name`: Java-Hello-World - (The name of your project)
+- `Location`: C:\Users\YOUR_USER_NAME\Documents
+- `Language`: Java
+- `JDK`: Oracle OpenJDK version 22
 
 If you do not have Oracle OpenJDK version 22 as an option, you may need to add it shown below.
 
 ![Adding JDK 1](./img/IntelliJ_IDEA_SelectJDK_1.webp)
 ![Adding JDK 2](./img/IntelliJ_IDEA_SelectJDK_2.webp)
 
-Once these are filled out, make sure to uncheck <code>Generate Code with onboarding tips</code> and then press Create. The new project should open in IDEA as seen below.
+Once these are filled out, make sure to uncheck `Generate Code with onboarding tips` and then press Create. The new project should open in IDEA as seen below.
 
 ![Project Opened](./img/IDEA_OpenedProject.webp)
 
 ## Testing the Project
 
 In the IDEA IDE, along the top of the window you should see a green play button, this will attempt to execute the main method in the currently open Java file.
-This is fine for running our <code>Main.java</code> file and printing "Hello World!" to the console, but it can be confusing when working across multiple files without understanding
+This is fine for running our `Main.java` file and printing "Hello World!" to the console, but it can be confusing when working across multiple files without understanding
 what an application's entry point is.
 
 ### What is an Entry Point?
 
 An application's entry point is the part of the code where the program begins execution.
 It is typically a specific method that is called when the program starts running.
-In the context of a simple Java "Hello World!" program, the application's entry point is the <code>Main</code> method.
+In the context of a simple Java "Hello World!" program, the application's entry point is the `Main` method.
 
 ```java
 // Main.java
@@ -66,7 +66,7 @@ In this Java program:
 - The Main class contains a method named main.
 - The main method has a parameter of type String[] args, which allows the program to accept command-line arguments.
 - When the program is executed, the main method serves as the starting point for the program's execution.
-- The <code>System.out.println</code> statement is used to print "Hello World!" to the console.
+- The `System.out.println` statement is used to print "Hello World!" to the console.
 
 ### Run/Debug Configuration
 
@@ -74,11 +74,11 @@ These settings define how your application should be executed or debugged.
 They allow you to customize various aspects of the running or debugging process, You can create multiple configurations for different scenarios or testing environments.
 This includes the main class to run, <TextTooltip text="program arguments"/>, <TextTooltip text="JVM"/> options, <TextTooltip text="environment variables"/>, and more.
 
-The default run/debug configuration in your IDEA project should be <code>Current File</code>. As we continue we will be creating multiple Java files making it a pain to use.
-So we are going to create a new run/debug configuration that will always run the Entry point in the <code>Main.java</code> file. Follow the steps below to set this up.
+The default run/debug configuration in your IDEA project should be `Current File`. As we continue we will be creating multiple Java files making it a pain to use.
+So we are going to create a new run/debug configuration that will always run the Entry point in the `Main.java` file. Follow the steps below to set this up.
 
-Along the top of the IDEA window, select the active configuration drop-down (If not yet changes it will read <code>Current File</code>).\
-Select <code>Edit Configurations...</code>
+Along the top of the IDEA window, select the active configuration drop-down (If not yet changes it will read `Current File`).\
+Select `Edit Configurations...`
 
 ![Edit Configuration 1](./img/IDEA_Configuration_1.webp)
 
@@ -86,10 +86,10 @@ In the top left select the + button to add a new configuration.
 
 ![Edit Configuration 2](./img/IDEA_Configuration_2.webp)
 
-Give this configuration a name, in this case, we are setting up a run/debug configuration for running our main entry point in the <code>Main.java</code> file.
-I have named it <code>Run Application</code> as it indicates what this configuration is for. Make sure to check <code>Store as project file</code>,
+Give this configuration a name, in this case, we are setting up a run/debug configuration for running our main entry point in the `Main.java` file.
+I have named it `Run Application` as it indicates what this configuration is for. Make sure to check `Store as project file`,
 to store our new configuration as a file, if we later use source control it can be tracked and backed up this way. Finally, under the Build and Run section you will need to enter
-<code>Main</code> as this is the file we wish to build and run in this configuration.
+`Main` as this is the file we wish to build and run in this configuration.
 
 Select OK to create the config.
 
@@ -97,17 +97,17 @@ Select OK to create the config.
 
 ### Running the Application
 
-The newly created <code>Run Application</code> configuration as default from the drop-down menu.\
+The newly created `Run Application` configuration as default from the drop-down menu.\
 Let's give it a test by pressing the green play button.
 
 ![Edit Configuration Test](./img/IDEA_Configuration_Test.webp)
 
-The <code>Run Application</code> configuration should have executed the Main entry point,
+The `Run Application` configuration should have executed the Main entry point,
 opened a console window along the bottom of the IDE, and printed "Hello World!".
 
 ![Hello World Output](./img/IDEA_Hello_World_Output.webp)
 
-Changing the input to <code>System.out.println</code> to anything else, for example I will change it to <code>My first Java Project!</code>, and running the application again will now print the new message.
+Changing the input to `System.out.println` to anything else, for example I will change it to `My first Java Project!`, and running the application again will now print the new message.
 
 ![Hello World Output](./img/IDEA_Hello_World_Output_2.webp)
 

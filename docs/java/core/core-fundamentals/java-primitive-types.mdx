@@ -30,14 +30,14 @@ This page outlines what primitive types are, in later pages based on variables, 
 
 In total there are 8 primitive types in Java:
 
-- <code>boolean</code>
-- <code>char</code>
-- <code>byte</code>
-- <code>short</code>
-- <code>int</code>
-- <code>long</code>
-- <code>float</code>
-- <code>double</code>
+- `boolean`
+- `char`
+- `byte`
+- `short`
+- `int`
+- `long`
+- `float`
+- `double`
 
 ## Bits
 
@@ -53,7 +53,7 @@ done by manipulating bits in various ways.
 
 ## Boolean
 
-The boolean type can have one of two values, <code>true</code> and <code>false</code>. It is used for evaluating logical conditions, and is typically used
+The boolean type can have one of two values, `true` and `false`. It is used for evaluating logical conditions, and is typically used
 for comparisons or in control flow statements, such as if statements, while loops, for loops etc. all of which we will later go over in the Control Flow Page.
 <!-- TODO: Add link when no longer a draft. [Control Flow Page](/docs/java-control-flow) -->
 
@@ -66,7 +66,7 @@ boolean bThisIsFalse = false;    // Initialized with the value false
 boolean bNotInitialized;         // Non-initialized so the values default is false
 ```
 
-<code>Typically stored using 1 bit but this is not explicitly defined in Java</code>
+`Typically stored using 1 bit but this is not explicitly defined in Java`
 
 ## Char
 
@@ -96,7 +96,7 @@ char newLine = '\u000A';       // Initialized with the newline character
 char nullChar = '\u0000';      // Initialized with the null character
 ```
 
-<code>Occupies 16 bits</code>
+`Occupies 16 bits`
 
 ## Byte
 
@@ -113,7 +113,7 @@ byte defaultValue;             // Non-initialized so the values default is 0
 byte errorValue = 1000;        // Value is outside of the types range, would result in a compilation error
 ```
 
-<code>Stored using 8 bits</code>
+`Stored using 8 bits`
 
 ## Short
 
@@ -130,7 +130,7 @@ short defaultValue;               // Non-initialized so the values default is 0
 short errorValue = 123456;        // Value is outside of the types range, would result in a compilation error
 ```
 
-<code>Stored using 16 bits</code>
+`Stored using 16 bits`
 
 ## Int
 
@@ -147,7 +147,7 @@ int defaultValue;                 // Non-initialized so the values default is 0
 int errorValue = 123456789;       // Value is outside of the types range, would result in a compilation error
 ```
 
-<code>Stored using 32 bits</code>
+`Stored using 32 bits`
 
 ## Long
 
@@ -165,7 +165,7 @@ long defaultValue;                // Non-initialized so the values default is 0
 long errorValue = 10000000000000000000000;   // Value is outside of the types range, would result in a compilation error
 ```
 
-<code>Stored using 64 bits</code>
+`Stored using 64 bits`
 
 ## Float
 
@@ -175,9 +175,9 @@ so for calculations in games that are usually approximated, they are widely used
 
 To expand on what a float type is, take the number -1.2651111. We can split this up to the following:
 
-- 1 bit is used to represent the sign <code>-</code>
-- 8 bits for the Exponent <code>1</code>
-- 23 bits for the Mantissa <code>2651111</code>
+- 1 bit is used to represent the sign `-`
+- 8 bits for the Exponent `1`
+- 23 bits for the Mantissa `2651111`
 
 ![IntelliJ Download](./img/IEEE-754-Floating-Point-Standard.webp)
 
@@ -192,7 +192,7 @@ As the Exponent increases, so do the bits required to represent the value.
 
 Take the value 12557.2651111, the Exponent has exceeded the 8 bits it originally had to represent its value. To store it, the number of bits representing
 the Mantissa (decimal value) will need to reduce, therefore reducing its precision. In this case, it will be rounded to fit this new precision.
-So storing 12557.2651111 would result in a float value of <code>12557.265f</code>.
+So storing 12557.2651111 would result in a float value of `12557.265f`.
 
 ```java
 float smallNumber = 3.14f;          // Initialized with the value 3.1400000
@@ -201,7 +201,7 @@ float defaultValue;                 // Non-initialized so the values default is 
 float errorValue = 1111111111111.1111111111111f;   // Value is outside of the types range, would result in a compilation error
 ```
 
-<code>Stored using 32 bits</code>
+`Stored using 32 bits`
 
 ## Double
 
@@ -211,9 +211,9 @@ or representing large or small quantities with high accuracy.
 
 To expand on what a double type is, let's consider the number -1.26511111212331. We can split this up as follows:
 
-- 1 bit is used to represent the sign <code>-</code>
-- 11 bits for the Exponent <code>1</code>
-- 52 bits for the Mantissa <code>-</code>
+- 1 bit is used to represent the sign `-`
+- 11 bits for the Exponent `1`
+- 52 bits for the Mantissa `-`
 
 Much like the float, as the Exponent grows in size the decimal places become less precise. I won't go in to much more detail than this,
 the concept is the same as the float but instead of single precision we have double precision allowing larger values in both the
@@ -225,4 +225,4 @@ double negativeNumber = -123.45f;    // Initialized with the value -123.4500000
 double defaultValue;                 // Non-initialized so the values default is 0.0
 ```
 
-<code>Stored using 64 bits</code>
+`Stored using 64 bits`

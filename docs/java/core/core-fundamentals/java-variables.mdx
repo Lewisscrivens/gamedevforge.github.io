@@ -27,19 +27,19 @@ boolean bSomeBoolean = true;
 char someCharacter = 'A';
 ```
 
-Consider the declared variable <code>int someNumber = 10;</code> here's a breakdown:
+Consider the declared variable `int someNumber = 10;` here's a breakdown:
 
-- Data type <code>int</code>
-- Variable name <code>someNumber</code>
-- Value <code>10</code>
-- Ending statement <code>;</code>
+- Data type `int`
+- Variable name `someNumber`
+- Value `10`
+- Ending statement `;`
 
 A variable name cannot be anything, they have to follow a certain rules:
 
 - The first character cannot be a number.
 - Characters used must be a letter (a-z or A-Z), number (0-9), dollar sign ($), or underscore (_).
-- Names are case-sensitive. <code>myVariable</code> and <code>myvariable</code> are different.
-- Reserved words in Java cannot be used as variable names. Things like <code>int</code>, <code>class</code>, <code>public</code>, etc.
+- Names are case-sensitive. `myVariable` and `myvariable` are different.
+- Reserved words in Java cannot be used as variable names. Things like `int`, `class`, `public`, etc.
 - Names should not contain whitespace or special characters like !, @, #, %, etc.
 
 ```java
@@ -55,8 +55,8 @@ boolean bStopApp! = false;   // Error, '!' is used in name
 
 ## Initialisation
 
-Initialisation is an important step when declaring a variable. In the Declaration section,
-all examples are initialised during declaration.
+Initialisation is an important step for assigning an initial value to a variable. In the Declaration section,
+all examples are initialised during declaration using the `=` assignment operator.
 This doesn't have to be the case though, variables can be initialised in different ways.
 
 To start with here is an uninitialized variable:
@@ -84,7 +84,7 @@ int numberOfApples = 5;
 
 ## Variable Inference
 
-In Java, you can infer a type when declaring a variable by using the <code>var</code> keyword.
+In Java, you can infer a type when declaring a variable by using the `var` keyword.
 It can only be used if you are initialising during declaration like so.
 
 ```java
@@ -105,15 +105,15 @@ pre-existing code when updating to these newer versions.
 
 Some other articles you might read mention it improves readability, but I disagree. It's a hot topic
 especially in the game industry where C++ is one of the most common languages with its equivalent being the
-<code>auto</code> keyword.
+`auto` keyword.
 
 ## Types of Variables
 
 In Java there are three main types of variables:
 
-- <code>Local variables</code>
-- <code>Instance variables</code>
-- <code>Static variables</code>
+- `Local variables`
+- `Instance variables`
+- `Static variables`
 
 :::note
 
@@ -231,7 +231,7 @@ Output:
 ## Constants
 
 Constants in Java are variables whose values cannot be changed once they are assigned.
-Any variable can be made a constant by using the <code>final</code> keyword during its declaration
+Any variable can be made a constant by using the `final` keyword during its declaration
 or in a class's constructor.
 
 The naming convention for constants is usually declared using uppercase letters with underscores to

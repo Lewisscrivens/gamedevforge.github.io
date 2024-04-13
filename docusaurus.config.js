@@ -87,8 +87,7 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} Lewis Scrivens`,
       },
       prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
+        theme: prismThemes.vsDark,
         additionalLanguages: ['powershell', 'java'],
         magicComments: [
           {

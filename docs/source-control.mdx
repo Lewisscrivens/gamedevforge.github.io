@@ -36,22 +36,21 @@ It's important to understand that as you are changing the contents of files, the
 These local changes can be synced with the repository (uploaded and downloaded), adding a new version of each file that has changed.
 
 <p>&nbsp;</p>
-<div align="center">
 
-    ```mermaid
+```mermaid
 
-    flowchart-elk
-    A([Working Copy #1]);
-    B([Working Copy #2]);
-    C([Working Copy #3]);
-    D(Repository);
-    A---> |Commit & Push| D;
-    D<---> |Update| A;
-    D<--->B;
-    D<--->C;
+flowchart-elk
+A([Working Copy #1]);
+B([Working Copy #2]);
+C([Working Copy #3]);
+D(Repository);
+A---> |Commit & Push| D;
+D<---> |Update| A;
+D<--->B;
+D<--->C;
 
-    ```
-</div>
+```
+
 <p>&nbsp;</p>
 
 ### Key Concepts

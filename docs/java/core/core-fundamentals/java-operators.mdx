@@ -3,77 +3,293 @@ description: What are operators in Java?
 tags: [Java, Beginner, Core]
 slug: /java-operators
 sidebar_position: 3
-draft: true
+draft: false
 ---
 
 import TextTooltip from '@site/src/components/text/textTooltip/textTooltip';
 
 # Operators
 
-# Operators
 
-Operators in Java are special symbols that perform specific operations on one, two, or three operands, and then return a result.
+In Java, operators are symbols like `+`, `-`, `/`, etc. that perform operations between two values and are fundamental to any programming language.
+Without operators, we wouldn't be able to compare values, perform <TextTooltip text="arithmetic"/> operations, or even assign values to variables.
+This is done by the usage of symbols to effect <TextTooltip text="operands"/>.
+
+## What are Operands?
+
+In programming terms, operands are the values or variables that operators can perform operations on.
+Take the expression `5 + 3` for instance, `5` and `3` are the operands and `+` is the operator in this scenario.
 
 ## Types of Operators
 
-Java supports several types of operators, which are:
+Java supports many types of operators, all with different use cases.
+For instance, consider a simple task of checking if a value is equal to 1 and then reacting to that in code by running an action.
+This would use both control-flow and a relational operator like so.
 
-- **Arithmetic Operators**: These are used to perform basic mathematical operations. Examples include `+`, `-`, `*`, `/`, and `%`.
+```java
+int someNumber = 1;
+if (someNumber == 1) // == <-- Relational operator.
+{
+    DoSomething();
+}
+```
 
-- **Relational Operators**: These are used to compare two values. Examples include `==`, `!=`, `>`, `<`, `>=`, and `<=`.
+Let's go over all the different types of operators in more detail.
 
-- **Logical Operators**: These are used to perform logical operations (i.e., operations that return a boolean value). Examples include `&&`, `||`, and `!`.
+### Arithmetic
 
-- **Assignment Operators**: These are used to assign a value to a variable. The simplest assignment operator is `=`. Others include `+=`, `-=`, `*=`, `/=`, and `%=`.
+Arithmetic operators are used to perform basic mathematical operations on two operands, mainly numerical types.
+In Java, there are five arithmetic operators:
 
-- **Unary Operators**: These are used to perform operations on a single operand. Examples include `++`, `--`, and `!`.
-
-- **Bitwise Operators**: These are used to perform operations on the bits of a number. Examples include `&`, `|`, `^`, `~`, `<<`, `>>`, and `>>>`.
-
-- **Ternary Operator**: This is a shorthand for an `if-else` statement and is the only operator in Java that works on three operands.
-
-## Examples
-
-Here are some examples of these operators in use:
+- Addition ` + `
+    - Adds the two operands together.
+- Subtraction ` - `
+    - Subtracts the right operand from the left one.
+- Multiplication ` * `
+    - Multiplies the two operands together.
+- Division ` / `
+    - Divides the left operand by the right one.
+- Modulus ` % `
+    - Returns the remainder of a division operation.
 
 ```java
 int a = 10;
-int b = 20;
+int b = 5;
 
-// Arithmetic Operators
-System.out.println("a + b = " + (a + b));  // Addition
-System.out.println("a - b = " + (a - b));  // Subtraction
-System.out.println("a * b = " + (a * b));  // Multiplication
-System.out.println("b / a = " + (b / a));  // Division
-System.out.println("b % a = " + (b % a));  // Modulus
+int Addition = a + b; // Result: 15
 
-// Relational Operators
-System.out.println("a == b = " + (a == b));  // Equal to
-System.out.println("a != b = " + (a != b));  // Not equal to
-System.out.println("a > b = " + (a > b));    // Greater than
-System.out.println("a < b = " + (a < b));    // Less than
-System.out.println("b >= a = " + (b >= a));  // Greater than or equal to
-System.out.println("b <= a = " + (b <= a));  // Less than or equal to
+int Subtraction = a - b; // Result: 5
 
-// Logical Operators
-boolean x = true;
-boolean y = false;
-System.out.println("x && y = " + (x&&y));  // Logical AND
-System.out.println("x || y = " + (x||y));  // Logical OR
-System.out.println("!x = " + !x);          // Logical NOT
+int Multiplication = a * b; // Result: 50
 
-// Assignment Operators
-a += b;
-System.out.println("a += b = " + a);  // It adds right operand to the left operand and assign the result to left operand
+int Division = a / b; // Result: 2
 
-// Unary Operators
-a++;
-System.out.println("a++ = " + a);  // Increment operator increases the value of variable by 1
+int Modulus = a % b; // Result: 0
 
-// Bitwise Operators
-System.out.println("a & b = " + (a & b));  // Bitwise AND
+// You can also perform operations directly with values as-well
+int AddValue = a + 20; // Result: 30
 
-// Ternary Operator
-int min = (a < b) ? a : b;
-System.out.println("min = " + min);  // It returns the minimum between a and b
 ```
+
+### Relational
+
+Relational operators are used to compare two operands. In Java, there are six relational operators:
+
+- Equal to `==`
+    - Checks if the two operands are equal.
+- Not equal to `!=`
+    - Checks if the two operands are not equal.
+- Greater than `>`
+    - Checks if the left operand is greater than the right one.
+- Less than `<`
+    - Checks if the left operand is less than the right one.
+- Greater than or equal to `>=`
+    - Checks if the left operand is greater than or equal to the right one.
+- Less than or equal to `<=`
+    - Checks if the left operand is less than or equal to the right one.
+
+```java
+int a = 10;
+int b = 5;
+
+boolean bIsEqual = a == b; // Result: false
+
+boolean bIsNotEqual = a != b; // Result: true
+
+boolean bIsGreaterThan = a > b; // Result: true
+
+boolean bIsLessThan = a < b; // Result: false
+
+boolean bIsGreaterThanOrEqual = a >= b; // Result: true
+
+boolean bIsLessThanOrEqual = a <= b; // Result: false
+
+// You can also perform operations directly with values as-well
+boolean bIsEqualValue = a == 10; // Result: true
+```
+
+These are mainly used in control-flow structures such as `if`, `while`, and `for` loops, where they help determine the
+path that the code should take based on certain conditions. We will discuss this in more detail in the control-flow page.
+They are also used in conditional operators.
+
+### Logical
+
+Logical operators are used to perform logical operations, typically within conditional statements. In Java, there are three primary logical operators:
+
+- AND `&&`
+    - Returns true if both operands are true.
+- OR `||`
+    - Returns true if at least one of the operands is true.
+- NOT `!`
+    - Returns the inverse of the operand. If the operand is true, it returns false, and vice versa.
+
+```java
+boolean bTrue = true;
+boolean bFalse = false;
+
+boolean bAnd = bTrue && bFalse; // Result: false
+
+boolean bOr = bTrue || bFalse; // Result: true
+
+boolean bNot = !bTrue; // Result: false
+```
+
+Much like the relational operators these are also used typically in control-flow structures to determine paths code should take based on these conditions.
+
+### Assignment
+
+Assignment operators are used to assign values to variables of a given data type. In Java, there are several assignment operators:
+
+- Assignment `=`
+    - Assigns the value from the right operand to the left operand.
+- Add and assign `+=`
+    - Adds the right operand to the left operand and assigns the result to the left operand.
+- Subtract and assign `-=`
+    - Subtracts the right operand from the left operand and assigns the result to the left operand.
+- Multiply and assign `*=`
+    - Multiplies the right operand by the left operand and assigns the result to the left operand.
+- Divide and assign `/=`
+    - Divides the left operand by the right operand and assigns the result to the left operand.
+- Modulus and assign `%=`
+    - Takes the modulus of the left operand by the right operand and assigns the result to the left operand.
+
+```java
+int a = 10;
+int b = 5;
+
+a += b; // a = a + b, Result: 15
+
+a -= b; // a = a - b, Result: 10
+
+a *= b; // a = a * b, Result: 50
+
+a /= b; // a = a / b, Result: 10
+
+a %= b; // a = a % b, Result: 0
+
+// You can also perform operations directly with values as-well
+a += 20; // a = a + 20, Result: 20
+```
+
+### Unary
+
+Unary operators are used to perform operations on a single operand. In Java, there are five primary unary operators:
+
+- Unary minus `-`
+    - Negates an expression.
+- Increment `++`
+    - Increases the value of a variable by 1.
+- Decrement `--`
+    - Decreases the value of a variable by 1.
+- NOT `!`
+    - Returns the inverse of the operand. If the operand is true, it returns false, and vice versa.
+- Bitwise Complement `~`
+    - Inverts all bits in the operand.
+
+:::note
+
+Some of these are duplicates from other operator types because they are also classed as unary operators.
+
+:::
+
+```java
+int a = 10;
+
+int unaryMinus = -a; // Result: -10
+
+a++; // a = a + 1, Result: 11
+
+a--; // a = a - 1, Result: 10
+
+boolean bTrue = true;
+boolean bNot = !bTrue; // Result: false
+
+int someNumber = 60; // 60 = 0011 1100
+int bitwiseComplement = ~someNumber;
+// someNumber -> 0011 1100
+// Result: -61 = 1100 0011
+```
+
+### Bitwise
+
+Bitwise operators are used to perform operations on individual bits of integer data types.
+In Java, there are six bitwise operators:
+
+:::info
+
+These are the hardest operators to grasp and I would suggest they are more towards advanced Java usage, so don't worry about fully grasping these early on.
+
+:::
+
+- AND `&`
+    - Performs a Boolean AND operation on each bit of its integer arguments.
+- OR `|`
+    - Performs a Boolean OR operation on each bit of its integer arguments.
+- XOR `^`
+    - Performs a Boolean exclusive OR operation (meaning only 1 of two arguments can be true) on each bit of its integer arguments.
+- Complement `~`
+    - Unary operator that inverts all bits in the operand.
+- Left shift `<<`
+    - Shifts the bits of the number to the left and fills 0 on voids left as a result. The leftmost bits are discarded.
+- Right shift `>>`
+    - Shifts the bits of the number to the right and fills 0 on voids left as a result. The rightmost bits are discarded.
+
+```java
+int a = 60; // 60 = 0011 1100
+int b = 13; // 13 = 0000 1101
+
+int and = a & b;
+// a ->         0011 1100
+// b ->         0000 1101
+// Result: 12 = 0000 1100
+
+int or = a | b;
+// a ->         0011 1100
+// b ->         0000 1101
+// Result: 61 = 0011 1101
+
+int xOr = a ^ b;
+// a ->         0011 1100
+// b ->         0000 1101
+// Result: 49 = 0011 0001
+
+int complement = ~a;
+// a ->          0011 1100
+// Result: -61 = 1100 0011
+
+int leftShift = a << 2;
+// a ->    0011 1100
+// Result: 240 = 1111 0000 - All bits have been shifted 2 places to the left
+
+int rightShift = a >> 2;
+// a ->    0011 1100
+// Result: 15 = 0000 1111 - All bits have been shifted 2 places to the right
+```
+
+### Conditional
+
+The conditional operator, also known as the ternary operator, is a shorthand for an `if-else` statement and is the only operator in Java that works on three operands.
+
+The operator is represented as ` ? : `
+
+- It starts with a boolean expression (the condition).
+- If the condition is true, it returns the value before the `:` (the if part).
+- If the condition is false, it returns the value after the `:` (the else part).
+
+```java
+int a = 10;
+int b = 5;
+
+int SomeResult = (a < b) ? a : b; // Result: 5
+// If a is less than b, set SomeResult to a, otherwise; set SomeResult to b
+```
+
+## Operator Precedence
+
+Operator precedence determines the order that operations are performed when an expression involves multiple operators.
+Operators with higher precedence are evaluated before operators with lower precedence.
+Operators with the same precedence are evaluated from left-right,
+except for assignment operators, which are evaluated from right-left.
+
+I don't want to go into too much detail here as there are already resources available for explaining operator precedence:
+https://www.javatpoint.com/java-operator-precedence
