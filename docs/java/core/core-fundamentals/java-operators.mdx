@@ -293,3 +293,44 @@ except for assignment operators, which are evaluated from right-left.
 With the worry of creating a carbon copy from other resources, I don't want to go into too much detail here, if you are
 interested here is a solid resource for explaining operator precedence:
 https://www.javatpoint.com/java-operator-precedence
+
+## Casting
+
+Casting in Java allows a variable of one type to be converted into another type. It's a way of telling the compiler,
+"Treat this piece of data as if it were of this other type". This can be useful when you want to perform
+operations between different types of data.
+
+### Implicit Casting
+
+This type of casting happens automatically when we assign a smaller type to a larger type size, this process is called a widening conversion.
+For example, assigning an `int` to a `long` or a `float` to a `double` using an assignment operator.
+
+Referring back to the data types page, we know an `int` is `32-bits` stored using `4-bytes` and a `long` is `64-bits` stored using `8-bytes`
+so it is possible to use implicit casting when setting a `long` variable to the value of an `int`. But the other way round would
+result in an error due to that being a narrowing conversion, and requiring explicit casting.
+
+```java
+int smallNumber = 100;
+long largeNumber = someNumber; // Implicit casting
+
+long largeNumber = 210005100000L;
+// Error
+int smallNumber = largeNumber; // Error: Invalid Implicit casting
+```
+
+### Explicit Casting
+
+This type of casting needs to be done manually by placing the type we want to "cast" to in parentheses in front of the variable or value we are tying to convert,
+this is also known as a narrowing conversion. For example, assigning a `long` to an `int` or a `double` to a `float` using an assignment operator.
+
+Going back to what was mentioned as implicit casting, explicit casting is used when converting a data type of larger size to one with a smaller size.
+
+```java
+long largeNumber = 210005100000L;
+int smallNumber = (int)largeNumber; // Explicit casting - Results in data loss
+```
+
+In this case the smaller number being an `int` cannot hold the long value being cast to an integer value, so it results in data loss.
+The value of the `smallNumber` variable ends up being `-448297504`. This is because the `int` data type in Java has a maximum value of `2147483647`,
+and any value beyond this range results in an overflow. That overflow causes the integer to wrap around and start from its minimum value of `-2147483648`.
+The value of `-448297504` is down to the way binary numbers handle overflow.

@@ -99,6 +99,10 @@ const config = {
             className: 'code-block-error-line',
             line: 'Error',
           },
+          {
+            className: 'code-block-warning-line',
+            line: 'Warning',
+          },
         ],
       },
       colorMode: {

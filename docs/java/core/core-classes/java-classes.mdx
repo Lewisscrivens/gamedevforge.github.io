@@ -11,3 +11,18 @@ import TextTooltip from '@site/src/components/text/textTooltip/textTooltip';
 # Classes
 
 TBD
+
+// Started writing this but putting this in the classes section for now, not sure where it fits yet till I get further along with structure.
+## Enumerations
+
+Enumerations, or `enum` in Java, are a special type of class used to define a collection of constants.
+They are used when we know all possible values in advance, such as choices on a game settings menu, days of the week, etc.
+Think about wanting a custom variable or data type where you can control its possible values.
+
+```java
+enum DayOfWeek {
+    SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
+}
+
+DayOfWeek today = DayOfWeek.MONDAY;
+```
