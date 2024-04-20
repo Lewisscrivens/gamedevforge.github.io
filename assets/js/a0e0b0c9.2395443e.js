@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgamedevforge=self.webpackChunkgamedevforge||[]).push([[529],{7344:e=>{e.exports=JSON.parse('{"title":"Core","slug":"/category/core","permalink":"/docs/category/core","navigation":{"previous":{"title":"Introduction","permalink":"/docs/java-introduction"},"next":{"title":"Fundamentals","permalink":"/docs/category/fundamentals"}}}')}}]);
