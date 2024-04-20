@@ -1,8 +1,9 @@
 ---
 description: Creating a hello-world starter project using IntelliJ IDEA.
-tags: [Java, Beginner, Project]
+tags: [Java, Beginner, Core]
 slug: /java-hello-world
-sidebar_position: 2
+sidebar_position: 1
+draft: false
 ---
 
 import TextTooltip from '@site/src/components/text/textTooltip/textTooltip';
@@ -108,6 +109,15 @@ opened a console window along the bottom of the IDE, and printed "Hello World!".
 ![Hello World Output](./img/IDEA_Hello_World_Output.webp)
 
 Changing the input to `System.out.println` to anything else, for example I will change it to `My first Java Project!`, and running the application again will now print the new message.
+
+```java
+// Main.java
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("My first Java Project!");
+    }
+}
+```
 
 ![Hello World Output](./img/IDEA_Hello_World_Output_2.webp)
 

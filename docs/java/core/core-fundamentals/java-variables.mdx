@@ -51,6 +51,9 @@ boolean classIsOpen = false; // Error, class is used in name
 
 // Error
 boolean bStopApp! = false;   // Error, '!' is used in name
+
+// Error
+int some Number = 2;         // Error, name has whitespace
 ```
 
 ## Initialisation
@@ -92,20 +95,13 @@ var someNumber = 5;         // This will default the type to int
 var someOtherNumber = 5.5f; // This will default the type to float
 ```
 
-:::note
-
-Using variable inference is a matter of personal preference.\
-While it can have its benefits, beginners might find it easier to explicitly declare variable types.
-
-:::
-
-This can be used however you see fit, I mainly use it for complex types; these could change with different versions
+This can be used however you see fit, I rarely use it, but it can be useful for complex types; these could change with different versions
 of Java or external API. Using var in these scenarios can avoid the need to reflect these changes in any
 pre-existing code when updating to these newer versions.
 
-Some other articles you might read mention it improves readability, but I disagree. It's a hot topic
-especially in the game industry where C++ is one of the most common languages with its equivalent being the
-`auto` keyword.
+Some other articles you might read mention it improves readability, but I disagree. While it can have its benefits, and beginners might find
+it easier for team based projects it makes the code less readable. It's a hot topic especially in the game industry where C++ is one of the
+most common languages with its equivalent being the `auto` keyword.
 
 ## Types of Variables
 
@@ -240,6 +236,6 @@ are used in multiple places, such as mathematical constants, configuration value
 
 ```java
 // These are constant static variables
-public static final double PI = 3.141592653589793; // Pi for mathematical calculations
-public static final int DEFAULT_TIMEOUT = 5000;    // Error message for an application timeout
+public static final double PI = 3.141592653589793d; // Pi for mathematical calculations
+public static final int DEFAULT_TIMEOUT = 5000;     // Error message for an application timeout
 ```
